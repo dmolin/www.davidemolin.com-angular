@@ -1,0 +1,50 @@
+[
+    {
+        "id":8,
+        "title": "My new FED Course on Udemy",
+        "imgUrl": "images/projects/fofed.jpg",
+        "url": "https://www.udemy.com/foundations-of-front-end-development/?couponCode=HVZ6Q8LZEF"
+    },
+    {
+        "id":1,
+        "title": "My Personal Homepage",
+        "imgUrl": "images/projects/homepage.jpg",
+        "url": "http://github.com/dmolin/www.davidemolin.com"
+    },
+    {
+        "id":2,
+        "title": "X-Plane Avionics (FlightSimPanels)",
+        "imgUrl": "images/projects/avionics.jpg",
+        "url": "http://github.com/dmolin/flightSimPanels"
+    },
+    {
+        "id":3,
+        "title": "Tash: another pub/sub library",
+        "imgUrl": "images/projects/tash.jpg",
+        "url": "http://github.com/dmolin/tash"
+    },
+    {
+        "id":4,
+        "title": "Camera API demo for Mozilla Dev-Derby contest",
+        "imgUrl": "images/projects/camera-api.jpg",
+        "url": "//github.com/dmolin/mozilla-derby-camera-api"
+    },
+    {
+        "id":5,
+        "title": "TicTacToe Backbone game demo",
+        "imgUrl": "images/projects/tictactoe.jpg",
+        "url": "//github.com/dmolin/tictactoe"
+    },
+    {
+        "id":6,
+        "title": "Giada Coppi personal homepage",
+        "imgUrl": "images/projects/giadacoppi.jpg",
+        "url": "//github.com/dmolin/www.giadacoppi.com"
+    },
+    {
+        "id":7,
+        "title": "Truck: a demo with reactive components",
+        "imgUrl": "images/projects/trucks.jpg",
+        "url": "//github.com/dmolin/trucks"
+    }
+]

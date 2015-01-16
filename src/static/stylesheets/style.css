@@ -1,0 +1,724 @@
+html, body, * {
+    box-sizing: border-box;
+}
+
+/*----------------------------------
+ * Typography
+ *---------------------------------*/
+
+h1,h2,h3,h4 { color: #CCCCCC; }
+h1 { font-size: 2.5em; }
+h2 { font-size: 2em; }
+h3 { font-size: 1.5em; margin-top: 0;}
+body, * {
+    color: #999;
+}
+
+h1,h2,h3,h4 {
+    font-family: 'Pathway Gothic One', sans-serif;
+    font-weight: normal;
+}
+
+/*----------------------------------
+ * Common
+ *---------------------------------*/
+
+blockquote { margin: 0; }
+
+article p,
+footer p {
+    line-height: 1.3em;
+}
+
+body {
+    color: #ddd;
+    font-size: 16px;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: #111111;
+    background-image: url(../images/bg-body.jpg);
+    background-repeat: repeat;
+    background-position: left top;
+
+    min-width: 320px;
+}
+    body.loading {
+        display: none;
+    }
+
+.wrapper {
+    padding: 0 1em 0;
+    margin: 0 auto;
+    max-width: 980px;
+    overflow: hidden;
+}
+
+#wrapper {
+    background-image: url(../images/wrapper.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    text-shadow:0 1px 0 #000;
+}
+
+.intro {
+    position: relative;
+    padding-top: 1em;
+    margin-bottom: 0.3em;
+}
+
+.cameo {
+    border-radius: 100px;
+}
+
+.rounded {
+    border-radius: 6px;
+}
+
+.pad {
+    padding: 0 1em 1em;
+}
+
+.pad-E { padding-right: 1em;}
+.pad-W { padding-left: 1em;}
+.pad-N { padding-top: 1em;}
+.pad-S { padding-bottom: 1em;}
+
+a {
+    text-decoration: none;
+    color: #349ba8;
+    outline:none;
+    visibility: visible !important;
+}
+a:hover {
+    text-decoration: underline;
+}
+
+.dialog-nav {
+    position: absolute;
+    bottom: 3px;
+    right: 4px;
+}
+
+.read-more {
+    color: #999;
+    text-decoration: none;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 1px 3px #000;
+    -webkit-box-shadow: 0 1px 3px #000;
+    text-shadow: 0 -1px 1px #000;
+    background-color: #0d0d0d;
+    padding-top: 5px;
+    padding-right: 10px;
+    padding-bottom: 6px;
+    padding-left: 10px;
+    float: right;
+    margin-top: 15px;
+    margin-left: 15px;
+}
+
+.banner {
+    text-align: center;
+    padding: 0.5em 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgba(0,0,0,0.2);
+    z-index: 100;
+}
+    .banner * {
+        color: #ff7900;
+        font-weight: bold;
+    }
+
+hr {
+    border: 1px inset #666;
+}
+
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
+
+/*----------------------
+ * Logo
+ *---------------------*/
+#logo {
+    text-align: center;
+    }
+
+    #logo p {
+        color: #ccc;
+    }
+
+    #logo h1 {
+        position: absolute;
+        text-indent: -9999px;
+        line-height: 0px;
+    }
+    #logo h2 {
+        display:none;
+    }
+
+    #logo img {
+        width: 80%;
+        max-width: 400px;
+    }
+
+    #logo a {
+        border-style: none;
+    }
+
+.owner {
+    text-align: center;
+    line-height: 1.5em;
+    font-family: 'Pathway Gothic One',sans-serif;
+    font-size: 1.3em;
+    }
+    .owner p {
+        margin: 0;
+    }
+    .owner em {
+        font-style: normal;
+        font-weight: bold;
+        color: #eee;
+    }
+
+/*----------------------
+ * Social Icons
+ *---------------------*/
+ul.social
+{
+    cursor: default;
+    padding: 0;
+    text-align: center;
+    margin: 2em 0 0;
+}
+    ul.social li
+    {
+        position: relative;
+        display: inline-block;
+        margin: 0.25em;
+        top: 0;
+    }
+        ul.social li a:hover,
+        ul.social li a:active,
+        ul.social li a:visited {
+            text-decoration: none;
+        }
+        ul.social li a {
+            display: block;
+            width: 36px;
+            height: 36px;
+            border-radius: 6px;
+            text-align: center;
+            top: 0;
+            position: relative;
+            text-decoration: none;
+
+            -moz-transition: top .2s ease-in-out;
+            -webkit-transition: top .2s ease-in-out;
+            -o-transition: top .2s ease-in-out;
+            -ms-transition: top .2s ease-in-out;
+            transition: top .2s ease-in-out;
+        }
+
+        ul.social li a:before {
+            background-color: #444;
+            background-image: -moz-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+            background-image: -ms-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+            background-image: -o-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+            background-image: -webkit-linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+            background-image: linear-gradient(top, rgba(0,0,0,0), rgba(0,0,0,0.2));
+            border-radius: 6px;
+            box-shadow: inset 0px 0px 0px 1px #282828, inset 0px 2px 1px 0px rgba(255,255,255,0.1);
+            color: #2E2E2E !important;
+            display: block;
+            font-size: 26px;
+            height: 36px;
+            line-height: 36px;
+            text-align: center;
+            outline: 0;
+            overflow: hidden;
+            text-shadow: 1px 1px 0px rgba(255,255,255,0.1);
+            width: 36px;
+
+            -moz-transition: background-color .2s ease-in-out;
+            -webkit-transition: background-color .2s ease-in-out;
+            -o-transition: background-color .2s ease-in-out;
+            -ms-transition: background-color .2s ease-in-out;
+            transition: background-color .2s ease-in-out;
+
+        }
+
+        ul.social.header {
+        }
+            ul.social.header li a:before {
+                background-color: transparent;
+            }
+
+            ul.social li a.fa-twitter       { background-color: #2DAAE4; }
+            ul.social li a.fa-facebook      { background-color: #3C5A98; }
+            ul.social li a.fa-dribbble      { background-color: #C4376B; }
+            ul.social li a.fa-linkedin      { background-color: #006599; }
+            ul.social li a.fa-tumblr        { background-color: #51718A; }
+            ul.social li a.fa-google-plus   { background-color: #DA2713; }
+            ul.social li a.fa-github        { background-color: #FAFAFA; }
+            ul.social li a.fa-rss           { background-color: #F2600B; }
+            ul.social li a.fa-instagram     { background-color: #E0D7C8; }
+            ul.social li a.fa-foursquare    { background-color: #39A3D4; }
+            ul.social li a.fa-skype         { background-color: #10BEF1; }
+            ul.social li a.fa-soundcloud    { background-color: #FE5419; }
+            ul.social li a.fa-youtube       { background-color: #BF2E25; }
+            ul.social li a.fa-blogger       { background-color: #FF6501; }
+            ul.social li a.fa-flickr        { background-color: #0062DB; }
+            ul.social li a.fa-vimeo         { background-color: #4C8AB0; }
+
+            ul.social li a:hover
+            {
+                /*top: -5px;*/
+            }
+                ul.social li a:hover:before
+                {
+                    background-color: transparent;
+                }
+
+
+/*----------------------
+ * LinkedIn
+ *---------------------*/
+#linkedin {
+    position: absolute;
+    top: 0px;
+    right: -2px;
+}
+    #linkedin a {
+        background: url('../images/linkedin.png') left top no-repeat;
+        background-size: 100% 100%;
+        float: right;
+        font-size: 0;
+        height: 25px;
+        text-indent: 200%;
+        width: 160px;
+        margin-top: -4px;
+        margin-right: -4px;
+    }
+
+
+/*----------------------
+ * Carousel
+ *----------------------*/
+.slideshow {
+    border: 1px solid #333;
+    padding: 0.5em;
+}
+
+.slides {
+    display:none;
+    }
+
+    .slides .slidesjs-navigation {
+      margin-top:3px;
+      text-decoration: none;
+      font-size: 2em;
+    }
+
+    .slides .slidesjs-previous {
+      margin-right: 10px;
+      float: left;
+    }
+
+    .slides .slidesjs-next {
+      margin-right: 10px;
+      float: left;
+    }
+
+    .slidesjs-pagination {
+      margin: 0.8em 0 0;
+      float: right;
+      list-style: none;
+      padding: 0;
+    }
+
+    .slidesjs-pagination li {
+      float: left;
+      margin: 0 1px;
+    }
+
+    .slidesjs-pagination li a {
+      display: block;
+      width: 13px;
+      height: 0;
+      padding-top: 13px;
+      background-image: url(../images/pagination.png);
+      background-position: 0 0;
+      float: left;
+      overflow: hidden;
+    }
+
+    .slidesjs-pagination li a.active,
+    .slidesjs-pagination li a:hover.active {
+      background-position: 0 -13px
+    }
+
+    .slidesjs-pagination li a:hover {
+      background-position: 0 -26px
+    }
+
+    .slides a:link,
+    .slides a:visited {
+      /*color: #333*/
+    }
+
+    .slides a:hover,
+    .slides a:active {
+      /*color: #9e2020*/
+    }
+
+.slides .slide[data-href] {
+    cursor: pointer;
+}
+
+.slides .slide figcaption {
+    background: #000;
+    bottom: 0;
+    opacity: 0.8;
+    position: absolute;
+    width: 100%;
+}
+    .slides .slide figcaption p {
+        color: #fff;
+        opacity: 1;
+    }
+
+
+/*-----------------------------------
+ * Articles
+ *-----------------------------------*/
+.articles {
+    margin-top: 1em;
+}
+    .articles article h2 {
+        text-decoration: none;
+        display: block;
+        background-image: url(../images/border.gif);
+        background-repeat: repeat-x;
+        background-position: left bottom;
+        color: #CCCCCC;
+        text-transform: uppercase;
+        font-size: 24px;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+
+/*--------------------------------------
+ * Toggles
+ *-------------------------------------*/
+.open-close {
+    position:relative;
+    background-image: url(../images/toggle-open.gif);
+    background-repeat: no-repeat;
+    background-position: right 17px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.open-close a {
+    text-decoration: none;
+    color: #CCCCCC;
+    text-transform: uppercase;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.open-close a:hover {
+}
+
+.current{
+    background-attachment: scroll;
+    background-image: url(../images/toggle-close.gif);
+    background-repeat: no-repeat;
+    background-position: right 19px;
+    color: #189ACB;
+}
+
+.desc {
+    display: none;
+    padding-top: 0.83em;
+}
+
+
+
+/*---------------------------------
+ * About me
+ *---------------------------------*/
+.about-me {
+    display: block;
+    max-width: 150px;
+    margin: auto;
+}
+
+.about-content {
+    padding: 0.5em 2em;
+}
+
+
+/*---------------------------------
+ * About me - techs
+ *---------------------------------*/
+.taglist {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.taglist-title {
+    display: block;
+    margin: 0.5em 0 1em;
+}
+
+.taglist-item {
+    float: left;
+    border: 1px solid #666;
+    background: #999;
+    border-radius: 4px;
+    padding: 0.1em 0.3em;
+    margin: 0.2em;
+    color: #ddd;
+    font-size: 0.9em;
+    text-shadow: 0 0px 1px #000;
+}
+
+/*---------------------------------
+ * Yes/No
+ *---------------------------------*/
+.yesno {
+}
+    .yesno strong {
+        color: #ccc;
+        font-weight: normal;
+    }
+
+    .yesno h3 {
+        padding-left: 0.5em;
+    }
+
+    .yesno .yes,
+    .yesno .no {
+        padding: 0 1em 0 0.5em;
+    }
+
+    .yesno ul {
+        list-style: none;
+        padding-left: 1em;
+    }
+        .yesno ul li {
+            line-height: 1.5em;
+            border-bottom: 1px dotted #333;
+            font-size: 1.1em;
+        }
+
+
+/*---------------------------------
+ * Projects
+ *--------------------------------*/
+.projects {
+    overflow: hidden;
+    position: relative;
+}
+    .projects ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+        .projects ul li {
+            padding: 2em;
+        }
+
+.project {
+    position: relative;
+    max-width: 310px;  /* max dimension for each project box */
+    margin: 0 auto;
+}
+    .project img {
+        border-radius: 0.4em;
+    }
+
+        .project a:hover img {
+            -moz-box-shadow: 0px 0px 17px #fff;
+            -webkit-box-shadow: 0px 0px 17px #fff;
+            box-shadow: 0px 0px 17px #fff;
+        }
+
+.project-title {
+    display:inline-block;
+    text-indent: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+.project-info {
+    border-radius: 0.3em;
+    background: #fff;
+    border: 1px solid #aaa;
+    display: none;
+    padding: 1em;
+    position: absolute;
+    top: 0.5em;
+    bottom: 0.5em;
+    left: 0.5em;
+    right: 0.5em;
+    z-index: 10;
+}
+
+/*---------------------------------
+ * Footer
+ *--------------------------------*/
+
+footer#footer {
+    text-shadow:1px 1px 0 #000;
+    background-color: #201f1e;
+    margin-top: 25px;
+    padding-top: 30px;
+    padding-right: 0px;
+    padding-bottom: 30px;
+    padding-left: 0px;
+}
+
+    #footer p,
+    #footer span {
+        color: #999;
+    }
+
+    #footer h2 {
+        margin-top: 0;
+    }
+
+/*--------------------------------
+ * Testimonials
+ *-------------------------------*/
+.testimonials {
+}
+    .testimonials .slides {
+        list-style:none;
+        padding:0;
+        margin:0;
+        position: relative;
+    }
+    .testimonials .slidesjs-container,
+    .testimonials .slidesjs-control {
+        /*height: 300px !important;*/
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    .testimonials .slidesjs-pagination {
+        position: absolute;
+        top: 1px;
+        right: 0;
+    }
+.authors {
+    font-weight: bold;
+    color: #666666;
+    text-align: right;
+    display: block;
+}
+/*--------------------------------
+ * Twitter
+ *-------------------------------*/
+a.twitter-follow {
+    padding: 0px;
+    height: 50px;
+    width: 75px;
+    background-repeat: no-repeat;
+    background-position: center top;
+    display: block;
+    text-indent: -9999px;
+    background-image: url(../images/twitter.png);
+    margin-top: -1px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    /*float: right;*/
+}
+
+.twitter-timeline {
+    min-width: 100% !important;
+}
+
+
+/*----------------------------------
+ * Feeds
+ *---------------------------------*/
+.feed-list .feed-item .feed-title {
+    display:block;
+    margin-bottom:10px;
+}
+
+.feed-list .feed-item .feed-tstamp {
+    display:block;
+    font-size:0.9em;
+    color: #AAAAAA;
+}
+
+/***************************************************
+                 COPYRIGHT
+***************************************************/
+#copyright {
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+#copyright p {
+    text-align: center;
+    color: #666666;
+}
+
+
+/*---------------------------------
+ * Responsive queries
+ *--------------------------------*/
+
+@media (min-width: 35.5em) {
+    .about-me {
+        display: inline-block;
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 48em) {
+    #logo {
+        text-align: left;
+    }
+    .owner {
+        float: right;
+    }
+
+    ul.social
+    {
+        __float: right;
+        __margin: 2em 0 0;
+        __text-align: left;
+    }
+}
+
+@media (min-width: 64em) {
+    #wrapper {
+        padding: 0;
+    }
+}
+
+/* move follow icon because of erratic width of twitter widget when transitioning between mobile and small displays */
+@media screen and (min-width: 485px) and (max-width: 568px) {
+    a.twitter-follow {
+        float: none;
+        /*margin-left: 385px;*/
+    }
+}

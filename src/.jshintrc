@@ -1,0 +1,11 @@
+{
+    "globals" : {
+        "global": true,
+        "angular": true
+    },
+    "asi" : true,
+    "eqeqeq" : false,
+    "strict" : false,
+    "sub": true,
+    "node": true
+}
