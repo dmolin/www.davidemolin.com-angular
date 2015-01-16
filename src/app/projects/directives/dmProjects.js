@@ -1,4 +1,5 @@
-module.exports = function dmProjects() {
+angular.module('app.projects')
+.directive( 'dmProjects', function dmProjects() {
     return {
         restrict: 'AE',
         transclude: true,
@@ -16,4 +17,4 @@ module.exports = function dmProjects() {
         link: function(scope, elements, attrs, controller) {
         }
     };
-};
+});

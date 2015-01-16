@@ -1,4 +1,5 @@
-module.exports = function carouselDirective() {
+angular.module('app.common')
+.directive('dmCarousel', function carouselDirective() {
     return {
         restrict: 'AE',
         transclude: true,
@@ -16,4 +17,4 @@ module.exports = function carouselDirective() {
                 });
         }
     };
-};
+});

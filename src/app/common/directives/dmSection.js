@@ -1,4 +1,5 @@
-module.exports = function sectionDirective() {
+angular.module('app.common')
+.directive('dmSection', function sectionDirective() {
     return {
         restrict: 'AE',
         transclude: true,
@@ -14,4 +15,4 @@ module.exports = function sectionDirective() {
             }
         }
     };
-};
+});

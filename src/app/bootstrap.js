@@ -1,13 +1,6 @@
 'use strict';
 
-var angular = require('angular'),
-    uiRouter = require('angular-ui-router'),
-    utils = require('./utils'),
-    home = require('./home'),
-    common = require('./common'),
-    projects = require('./projects');
-
-var app = angular.module('app', [ 'ui.router', home.name, common.name, projects.name ]);
+var app = angular.module('app', ['ui.router', 'app.common', 'app.home', 'app.projects']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');
@@ -17,6 +10,6 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('home', {
             url: '/',
             templateUrl: 'home/home.html',
-            controller: 'HomeController'
+            controller: 'app.home.HomeController'
         });
 });

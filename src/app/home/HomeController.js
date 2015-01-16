@@ -1,4 +1,3 @@
-module.exports = function homeController($scope) {
-    //will use a service here...
-    $scope.projects = [];
-};
+angular.module('app.home')
+.controller('app.home.HomeController', function($scope) {
+});
