@@ -1,3 +1,4 @@
 module.exports = function homeController($scope) {
-    $scope.title = "Home page";
+    //will use a service here...
+    $scope.projects = [];
 };

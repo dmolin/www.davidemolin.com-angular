@@ -2,10 +2,12 @@
 
 var angular = require('angular'),
     uiRouter = require('angular-ui-router'),
+    utils = require('./utils'),
     home = require('./home'),
-    common = require('./common');
+    common = require('./common'),
+    projects = require('./projects');
 
-var app = angular.module('app', [ 'ui.router', home.name, common.name ]);
+var app = angular.module('app', [ 'ui.router', home.name, common.name, projects.name ]);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');

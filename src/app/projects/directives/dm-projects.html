@@ -1,0 +1,12 @@
+<!-- use ng-repeat on the controller data -->
+<ul data-id="projects-list">
+    <li class="pure-u-1 pure-u-sm-1-2 pure-u-md-1-3 pure-u-lg-1-4"
+        ng-repeat="project in projects">
+        <div class="project" >
+            <a target="_blank" href="{{project.url}}">
+                <span class="project-title">{{project.title}}</span>
+                <img class="pure-img" src="{{project.imgUrl}}" alt="{{project.title}}">
+            </a>
+        </div>
+    </li>
+</ul>
