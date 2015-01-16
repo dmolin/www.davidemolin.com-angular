@@ -23,6 +23,7 @@
 
 <div id="view" ui-view></div>
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 <%= scripts %>
 
 <script>

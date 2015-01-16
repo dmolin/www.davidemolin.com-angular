@@ -20,7 +20,8 @@ module.exports = function (grunt) {
     var config = {
         distdir: "dist",
         workdir: ".work",
-        srcdir: "src/app",
+        srcdir: "src",
+        appdir: "src/app",
         pkg: grunt.file.readJSON('package.json')
     };
 

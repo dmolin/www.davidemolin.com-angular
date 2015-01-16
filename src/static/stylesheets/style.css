@@ -441,7 +441,7 @@ ul.social
 .open-close a:hover {
 }
 
-.current{
+.open-close_expanded {
     background-attachment: scroll;
     background-image: url(../images/toggle-close.gif);
     background-repeat: no-repeat;
@@ -450,7 +450,6 @@ ul.social
 }
 
 .desc {
-    display: none;
     padding-top: 0.83em;
 }
 

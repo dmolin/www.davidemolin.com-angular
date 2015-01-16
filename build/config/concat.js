@@ -5,12 +5,20 @@ module.exports = function concat(grunt) {
                 separator: ";"
             },
             dev: {
-                src: ['<%= workdir %>/app.js', '<%= workdir %>/templates.js'],
+                src: [
+                    '<%= srcdir %>/js/jquery.cycle.all.min.js',
+                    '<%= srcdir %>/js/jquery.slides.min.js',
+                    '<%= workdir %>/app.js',
+                    '<%= workdir %>/templates.js'
+                ],
                 dest: "<%= distdir %>/js/app.js"
             },
             prod: {
-                src:  [
-                    '<%= workdir %>/app.js', '<%= workdir %>/templates.js'
+                src: [
+                    '<%= srcdir %>/js/jquery.cycle.all.min.js',
+                    '<%= srcdir %>/js/jquery.slides.min.js',
+                    '<%= workdir %>/app.js',
+                    '<%= workdir %>/templates.js'
                 ],
                 dest: '<%= distdir %>/js/app.js'
             }
