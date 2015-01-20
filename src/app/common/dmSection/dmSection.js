@@ -3,7 +3,7 @@ angular.module('app.common')
     return {
         restrict: 'AE',
         transclude: true,
-        templateUrl: 'common/directives/dm-section.html',
+        templateUrl: 'common/dmSection/dm-section.html',
         scope: {
             title: '@',
             contentClass: '@'

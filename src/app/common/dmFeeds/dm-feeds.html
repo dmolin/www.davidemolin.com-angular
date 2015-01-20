@@ -1,0 +1,23 @@
+<header>
+    <h2>{{title}}</h2>
+</header>
+
+<div id="blog-posts">
+    <p ng-show="feeds.items.length === 0">Loading feeds....</p>
+    <div class="feed-list" >
+        <div class="feed-item slide" data-slideshow-index="{{$index}}"
+            ng-repeat="feed in feeds.items">
+            <div style="position:relative;overflow:hidden">
+            <span class='feed-title' ng-show="showTitle">
+                <a href='"{{feed[feedLink]}}"'>{{feed[feedTitle]}}</a>
+            </span>
+
+            <span class='feed-tstamp' ng-show="showTimestamp">{{feed.updated}}</span>
+            <p>
+                <span ng-bind="feed.summary"></span>
+                <span ng-show="feed[feedText].length > maxLines">... <a href='"{{feed[feedLink]}}"'>Read More</a></span>
+            </p>
+            </div>
+        </div>
+    </div>
+</div>

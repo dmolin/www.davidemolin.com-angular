@@ -1,6 +1,6 @@
 'use strict';
 
-var app = angular.module('app', ['ui.router', 'app.common', 'app.home', 'app.projects']);
+var app = angular.module('app', ['ui.router', 'app.common', 'app.home', 'app.projects', 'ngAnimate']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
     $urlRouterProvider.otherwise('/');

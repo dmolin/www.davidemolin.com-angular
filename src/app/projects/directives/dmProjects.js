@@ -11,7 +11,7 @@ angular.module('app.projects')
 
             ProjectService.getAll().then(function(data) {
                 $scope.projects = data;
-                console.log("projects #" + $scope.projects.length);
+                //console.log("projects #" + $scope.projects.length);
             })
         },
         link: function(scope, elements, attrs, controller) {

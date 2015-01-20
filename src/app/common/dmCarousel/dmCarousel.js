@@ -3,7 +3,7 @@ angular.module('app.common')
     return {
         restrict: 'AE',
         transclude: true,
-        templateUrl: 'common/directives/dm-carousel.html',
+        templateUrl: 'common/dmCarousel/dm-carousel.html',
         scope: {
         },
         link: function(scope, elements, attrs) {

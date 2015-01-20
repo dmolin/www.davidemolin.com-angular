@@ -88,7 +88,6 @@ a {
     text-decoration: none;
     color: #349ba8;
     outline:none;
-    visibility: visible !important;
 }
 a:hover {
     text-decoration: underline;
@@ -436,6 +435,7 @@ ul.social
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
+    outline: none;
 }
 
 .open-close a:hover {
@@ -447,6 +447,16 @@ ul.social
     background-repeat: no-repeat;
     background-position: right 19px;
     color: #189ACB;
+}
+
+.expandable {
+    overflow: hidden;
+    transition: all linear 0.5s;
+    opacity: 1;
+}
+
+.expandable.ng-hide {
+    opacity: 0;
 }
 
 .desc {
