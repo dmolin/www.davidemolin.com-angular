@@ -9,7 +9,8 @@ module.exports = function index(grunt) {
                             '<script src="js/jquery.min.js"></script>',
                             //'<script src="js/jquery.cycle.all.min.js"></script>',
                             '<script src="js/jquery.cycle2.min.js"></script>',
-                            '<script src="js/jquery.slides.min.js"></script>',
+                            //'<script src="js/jquery.slides.min.js"></script>',
+                            '<script src="js/jquery.slides.js"></script>',
                             '<script src="js/underscore-min.js"></script>',
                             '<script src="js/xml2json.min.js"></script>',
                             //'<script src="js/angular.min.js"></script>',
@@ -30,7 +31,10 @@ module.exports = function index(grunt) {
                             //module: projects
                             '<script src="js/app/projects/index.js"></script>',
                             '<script src="js/app/projects/directives/dmProjects.js"></script>',
-                            '<script src="js/app/projects/services/ProjectService.js"></script>'
+                            '<script src="js/app/projects/services/ProjectService.js"></script>',
+                            //module: recommendations
+                            '<script src="js/app/recommendations/index.js"></script>',
+                            '<script src="js/app/recommendations/directives/dmRecommendations.js"></script>',
 
 
                         ].join('\n')

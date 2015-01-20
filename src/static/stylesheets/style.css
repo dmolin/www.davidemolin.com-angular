@@ -318,7 +318,7 @@ ul.social
 }
 
 .slides {
-    display:none;
+    __display:none;
     }
 
     .slides .slidesjs-navigation {
@@ -615,6 +615,7 @@ footer#footer {
  * Testimonials
  *-------------------------------*/
 .testimonials {
+    font-size: 0.9em;
 }
     .testimonials .slides {
         list-style:none;
@@ -624,7 +625,6 @@ footer#footer {
     }
     .testimonials .slidesjs-container,
     .testimonials .slidesjs-control {
-        /*height: 300px !important;*/
         overflow-y: auto;
         overflow-x: hidden;
     }
@@ -633,6 +633,11 @@ footer#footer {
         top: 1px;
         right: 0;
     }
+
+.endorsement .title {
+    font-weight: bold;
+    display: block;
+}
 .authors {
     font-weight: bold;
     color: #666666;

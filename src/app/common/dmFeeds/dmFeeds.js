@@ -62,36 +62,17 @@ angular.module("app.common")
             var parent = $(angular.element('.feed-list').parent());
             //run jQuery plugin function to bring the feed roller to life
             var feed = angular.element('.feed-list');
-            //var w = angular.element($window);
 
-            //scope.getWidth = function() { return parent.width(); };
-
-            function dowork() {
-                feed.cycle({
-                    fx: 'fade',
-                    slides: '> .slide',
-                    timeout: scope.timeout || 10000,
-                    speed: 3000
-                });
-            }
-
-            /*
-            scope.$watch(scope.getWidth, function(newW, oldW) {
-                if(newW != oldW) {
-                    console.log("resized! old=" + oldW + " new=" + newW);
-                    dowork();
-                }
-            });
-
-            w.bind('resize', function () {
-                scope.$apply();
-            });
-            */
             scope.$watch('loaded', function() {
                 if(scope.feeds.items.length === 0) return;
 
                 $timeout(function(){
-                    dowork();
+                    feed.cycle({
+                        fx: 'fade',
+                        slides: '> .slide',
+                        timeout: scope.timeout || 10000,
+                        speed: 3000
+                    });
                 });
             }, true)
         }
