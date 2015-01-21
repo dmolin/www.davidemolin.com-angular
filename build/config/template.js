@@ -7,10 +7,8 @@ module.exports = function index(grunt) {
                     data:{
                         scripts: [
                             '<script src="js/jquery.min.js"></script>',
-                            //'<script src="js/jquery.cycle.all.min.js"></script>',
                             '<script src="js/jquery.cycle2.min.js"></script>',
-                            //'<script src="js/jquery.slides.min.js"></script>',
-                            '<script src="js/jquery.slides.js"></script>',
+                            '<script src="js/jquery.slides.min.js"></script>',
                             '<script src="js/underscore-min.js"></script>',
                             '<script src="js/xml2json.min.js"></script>',
                             //'<script src="js/angular.min.js"></script>',

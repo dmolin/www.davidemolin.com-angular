@@ -1,7 +1,7 @@
 /*
  * Copy static assets to {distdir}
  */
-module.exports = function _copyStaticAssets(grunt) {
+module.exports = function _copy(grunt) {
     return {
         copy: {
             assets: {
@@ -19,6 +19,12 @@ module.exports = function _copyStaticAssets(grunt) {
                     { dest: '<%= distdir %>/js/app', src : '**/*.js', expand: true, cwd: '<%= workdir %>' }
                 ]
             },
+
+            prod: {
+                files: [
+                    {dest: '<%= distdir %>/js', src:'app.js', expand:true, cwd: '<%= workdir %>' }
+                ]
+            }
 
         }
     }

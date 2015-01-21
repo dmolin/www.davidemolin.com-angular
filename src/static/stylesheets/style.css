@@ -633,6 +633,14 @@ footer#footer {
         top: 1px;
         right: 0;
     }
+    .testimonials .slides-container {
+        opacity: 0;
+        transition: all 1s linear;
+    }
+    .testimonials .slides-container.rendered {
+        opacity: 1;
+    }
+
 
 .endorsement .title {
     font-weight: bold;

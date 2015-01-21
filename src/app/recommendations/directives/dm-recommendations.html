@@ -1,10 +1,10 @@
-<div class="slides">
+<div class="slides" ng-cloak>
     <div ng-hide="loaded">
         <span class="loading">Loading...</span>
     </div>
 
 
-    <div class="slides-container">
+    <div class="slides-container" ng-attr-class="slides-container {{rendered && 'rendered' || '' }}" >
         <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="foundicon-enclosed-left-arrow icon-large"></i></a>
         <a href="#" class="slidesjs-next slidesjs-navigation"><i class="foundicon-enclosed-right-arrow icon-large"></i></a>
         <div class="slide" ng-repeat="rec in recs">

@@ -1,3 +1,5 @@
+var fs = require('fs');
+
 module.exports = function concat(grunt) {
     return {
         concat: {
@@ -7,12 +9,19 @@ module.exports = function concat(grunt) {
             prod: {
                 src: [
                     '<%= srcdir %>/js/jquery.min.js',
-                    '<%= srcdir %>/js/jquery.cycle.all.min.js',
+                    '<%= srcdir %>/js/jquery.cycle2.min.js',
                     '<%= srcdir %>/js/jquery.slides.min.js',
-                    '<%= workdir %>/app.js',
+                    '<%= srcdir %>/js/underscore-min.js',
+                    '<%= srcdir %>/js/xml2json.min.js',
+                    '<%= srcdir %>/js/angular.min.js',
+                    '<%= srcdir %>/js/angular-ui-router.min.js',
+                    '<%= srcdir %>/js/angular-animate.min.js',
+                    '<%= srcdir %>/app/bootstrap.js',
+                    '<%= srcdir %>/app/**/index.js',
+                    '<%= srcdir %>/app/**/*.js',
                     '<%= workdir %>/templates.js'
                 ],
-                dest: '<%= distdir %>/js/app.js'
+                dest: '<%= workdir %>/app.js'
             }
         }
     };

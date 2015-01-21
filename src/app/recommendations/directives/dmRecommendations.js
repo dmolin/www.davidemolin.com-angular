@@ -8,6 +8,7 @@ angular.module('app.recommendations')
         controller: function($scope) {
             $scope.recs = [];
             $scope.loaded = false;
+            $scope.rendered = false;
 
             $http.get('data/recommendations/all.json').then(function(response) {
                     $scope.recs = response.data;
@@ -25,6 +26,7 @@ angular.module('app.recommendations')
                             height: 270,
                             navigation: false
                     });
+                    scope.rendered = true;
                 },200);
             });
         }
