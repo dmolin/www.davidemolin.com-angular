@@ -88,7 +88,6 @@ a {
     text-decoration: none;
     color: #349ba8;
     outline:none;
-    visibility: visible !important;
 }
 a:hover {
     text-decoration: underline;
@@ -319,7 +318,7 @@ ul.social
 }
 
 .slides {
-    display:none;
+    __display:none;
     }
 
     .slides .slidesjs-navigation {
@@ -436,6 +435,7 @@ ul.social
     text-transform: uppercase;
     padding-top: 10px;
     padding-bottom: 10px;
+    outline: none;
 }
 
 .open-close a:hover {
@@ -447,6 +447,16 @@ ul.social
     background-repeat: no-repeat;
     background-position: right 19px;
     color: #189ACB;
+}
+
+.expandable {
+    overflow: hidden;
+    transition: all linear 0.5s;
+    opacity: 1;
+}
+
+.expandable.ng-hide {
+    opacity: 0;
 }
 
 .desc {
@@ -605,6 +615,7 @@ footer#footer {
  * Testimonials
  *-------------------------------*/
 .testimonials {
+    font-size: 0.9em;
 }
     .testimonials .slides {
         list-style:none;
@@ -614,7 +625,6 @@ footer#footer {
     }
     .testimonials .slidesjs-container,
     .testimonials .slidesjs-control {
-        /*height: 300px !important;*/
         overflow-y: auto;
         overflow-x: hidden;
     }
@@ -623,6 +633,11 @@ footer#footer {
         top: 1px;
         right: 0;
     }
+
+.endorsement .title {
+    font-weight: bold;
+    display: block;
+}
 .authors {
     font-weight: bold;
     color: #666666;

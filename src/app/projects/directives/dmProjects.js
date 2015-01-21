@@ -1,4 +1,5 @@
-module.exports = function dmProjects() {
+angular.module('app.projects')
+.directive( 'dmProjects', function dmProjects() {
     return {
         restrict: 'AE',
         transclude: true,
@@ -10,10 +11,10 @@ module.exports = function dmProjects() {
 
             ProjectService.getAll().then(function(data) {
                 $scope.projects = data;
-                console.log("projects #" + $scope.projects.length);
+                //console.log("projects #" + $scope.projects.length);
             })
         },
         link: function(scope, elements, attrs, controller) {
         }
     };
-};
+});

@@ -1,0 +1,27 @@
+<div class="slides">
+    <div ng-hide="loaded">
+        <span class="loading">Loading...</span>
+    </div>
+
+
+    <div class="slides-container">
+        <a href="#" class="slidesjs-previous slidesjs-navigation"><i class="foundicon-enclosed-left-arrow icon-large"></i></a>
+        <a href="#" class="slidesjs-next slidesjs-navigation"><i class="foundicon-enclosed-right-arrow icon-large"></i></a>
+        <div class="slide" ng-repeat="rec in recs">
+            <p><time datetime="{{ rec.datetimeRaw }}">{{ rec.when }}</time></p>
+            <blockquote>
+                <p class='endorsement'>
+                    <span class='title' ng-show="rec.title">{{ rec.title }}</span>
+                    {{ rec.text }}
+                </p>
+            </blockquote>
+            <cite>
+                <a title="View {{ rec.author }} Profile" href="{{rec.authorUrl}}">{{rec.author}}</a>,
+                <em>{{rec.role}}</em>
+                <br />
+                <i>{{rec.relationship}}</i>
+            </cite>
+        </div>
+    </div>
+
+</div>

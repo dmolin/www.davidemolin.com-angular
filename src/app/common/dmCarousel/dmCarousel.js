@@ -1,8 +1,9 @@
-module.exports = function carouselDirective() {
+angular.module('app.common')
+.directive('dmCarousel', function carouselDirective() {
     return {
         restrict: 'AE',
         transclude: true,
-        templateUrl: 'common/directives/dm-carousel.html',
+        templateUrl: 'common/dmCarousel/dm-carousel.html',
         scope: {
         },
         link: function(scope, elements, attrs) {
@@ -16,4 +17,4 @@ module.exports = function carouselDirective() {
                 });
         }
     };
-};
+});

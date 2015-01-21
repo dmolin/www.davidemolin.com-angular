@@ -4,16 +4,6 @@ module.exports = function concat(grunt) {
             options: {
                 separator: ";\n"
             },
-            dev: {
-                src: [
-                    '<%= srcdir %>/js/jquery.min.js',
-                    '<%= srcdir %>/js/jquery.cycle.all.min.js',
-                    '<%= srcdir %>/js/jquery.slides.min.js',
-                    '<%= workdir %>/app.js',
-                    '<%= workdir %>/templates.js'
-                ],
-                dest: "<%= distdir %>/js/app.js"
-            },
             prod: {
                 src: [
                     '<%= srcdir %>/js/jquery.min.js',

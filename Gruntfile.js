@@ -12,6 +12,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-connect');
     grunt.loadNpmTasks('grunt-contrib-jasmine');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-angular-templates');
@@ -34,12 +35,12 @@ module.exports = function (grunt) {
     //console.log(config);
 
     // Register alias tasks
-    grunt.registerTask("stage1", ["clean:pre", "init", "jshint", "copy:assets", "cssmin", "browserify", "ngtemplates"]);
-    grunt.registerTask( "dev",  ["stage1", "copy:libs", "concat:dev", "template:dev"]); //, "clean:post"] );
+    grunt.registerTask("stage1", ["clean:pre", "init", "jshint", "copy:assets", "cssmin", "ngtemplates"]);
+    grunt.registerTask( "dev",  ["stage1", "copy:libs", "copy:app", "template:dev" ]); //, "clean:post"] );
     //grunt.registerTask( "prod", ["stage1", "uglify", "concat:prod", "template:prod", "clean:post"] );
 
     // Default task.
-    grunt.registerTask("default", ["dev"]);
+    grunt.registerTask("default", ["dev", "connect", "watch"]);
 
 };
 
@@ -53,13 +54,3 @@ function _composeGruntConfig(grunt) {
     });
     return config;
 }
-
-
-    //1. clean dist/ and remove .work/
-    //2. lint js (stage 1)
-    //3. copy static assets to dist/
-	//4. parse js UI templates (= generate one views/templates.js for each module)
-    //5. browserify all js files into .work/app.js
-	//6. [PROD] uglify .work/app.js
-	//7. [PROD] concat all js files together to dist/app.js
-	//8. parse and copy index.html.tpl into dist/index.html (insert script tags where needed)
