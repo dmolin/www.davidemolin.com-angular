@@ -11,5 +11,10 @@ app.config(function($stateProvider, $urlRouterProvider) {
             url: '/',
             templateUrl: 'home/home.html',
             controller: 'app.home.HomeController'
+        })
+        .state('section', {
+            url: '/section/:sectionId',
+            templateUrl: 'home/home.html',
+            controller: 'app.home.HomeController'
         });
 });

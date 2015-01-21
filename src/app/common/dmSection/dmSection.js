@@ -6,10 +6,15 @@ angular.module('app.common')
         templateUrl: 'common/dmSection/dm-section.html',
         scope: {
             title: '@',
-            contentClass: '@'
+            contentClass: '@',
+            current: '@?'
+        },
+        controller: function($scope) {
+            $scope.current = $scope.current === 'true';
         },
         link: function(scope, elements, attrs) {
-            scope.isExpanded = false;
+            scope.isExpanded = scope.current;
+
             scope.toggle = function toggle() {
                 scope.isExpanded = !scope.isExpanded;
             }

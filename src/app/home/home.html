@@ -75,7 +75,7 @@
     <!-- content area -->
     <section class="articles">
         <!-- About me -->
-        <article data-id="about-me" dm-section title="About me">
+        <article data-id="about-me" dm-section title="About me" ng-attr-current="{{section === 'about-me'}}">
             <div class="about-me pure-u-1 pure-u-sm-1-3 pure-u-lg-1-6">
                 <a href="//linkedin.com/in/davidemolin" target="_blank"><img class="cameo pure-img" title="dmolin-quarter" src="/images/me.jpg" alt="Picture of myself" /></a>
             </div>
@@ -131,7 +131,7 @@
         </article>
 
         <!-- Yes & No -->
-        <article data-id="yesnos" title="My Yes &amp; No" content-class="yesno" dm-section>
+        <article data-id="yesnos" title="My Yes &amp; No" content-class="yesno" dm-section ng-attr-current="{{section === 'yesnos'}}">
             <div class="pure-u-1 pure-u-sm-1-2 yes">
                 <h3>My YES</h3>
                 <ul class=''>
@@ -164,16 +164,12 @@
         </article>
 
         <!-- Projects -->
-        <article data-id="my-projects" title="Projects I've been working on" content-class="projects" dm-section>
+        <article data-id="my-projects" title="Projects I've been working on" content-class="projects" dm-section ng-attr-current="{{section === 'my-projects'}}">
             <dm-projects></dm-projects>
         </article>
 
-        <!--
-        <article data-id="my-projects" title="Projects I've been working on" content-class="projects" dm-section>
-        </article>
-        -->
         <!-- Contact me -->
-        <article data-id="contact-me" title="Contact me" class="contact-me" dm-section>
+        <article data-id="contact-me" title="Contact me" class="contact-me" dm-section ng-attr-current="{{section === 'contact-me'}}">
             <div class="pure-u-1">
                 <h3>Email me</h3>
                 <p>For any enquiry, please reach me at <a href="mailto:davide.molin@gmail.com">davide.molin-AT-gmail.com</a></p>
