@@ -23,6 +23,7 @@ module.exports = function (grunt) {
         workdir: ".work",
         srcdir: "src",
         appdir: "src/app",
+        assetsdir: "../common",
         pkg: grunt.file.readJSON('package.json')
     };
 
@@ -36,8 +37,8 @@ module.exports = function (grunt) {
 
     // Register alias tasks
     grunt.registerTask("stage1", ["clean:pre", "init", "jshint", "copy:assets", "cssmin", "ngtemplates"]);
-    grunt.registerTask( "dev",  ["stage1", "copy:libs", "copy:app", "template:dev" ]); //, "clean:post"] );
-    grunt.registerTask( "prod", ["stage1", "concat:prod", "uglify", "copy:prod", "template:prod"] );
+    grunt.registerTask( "dev",  ["stage1", "copy:libs", "copy:app", "template:dev", "clean:post"] );
+    grunt.registerTask( "prod", ["stage1", "concat:prod", "uglify", "copy:prod", "template:prod", "clean:post"] );
 
     // Default task.
     grunt.registerTask("default", ["dev", "connect", "watch"]);

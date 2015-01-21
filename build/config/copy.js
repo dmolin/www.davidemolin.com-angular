@@ -5,7 +5,7 @@ module.exports = function _copy(grunt) {
     return {
         copy: {
             assets: {
-                files: [{ dest: '<%= distdir %>', src : '**', expand: true, cwd: 'src/static/' }]
+                files: [{ dest: '<%= distdir %>', src : '**', expand: true, cwd: '<%= assetsdir %>/static/' }]
             },
 
             //js libs that need to be copied when in dev mode (in prod mode they get assembled into the final app.js file)
