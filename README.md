@@ -9,6 +9,7 @@ Please, have a look [here](https://github.com/dmolin/www.davidemolin.com) for th
 
 - Angular.js (1.3.9) with jQuery (used only for the jquery plugins)
 - Node.js + Grunt and a bunch of plugins for the build process
+- Karma for Unit Testing (still in the making)
 
 ### Why I didn't use browserify and/or commonJS ###
 
