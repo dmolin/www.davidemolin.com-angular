@@ -15,7 +15,7 @@ module.exports = function _copy(grunt) {
 
             app: {
                 files: [
-                    { dest: '<%= distdir %>/js/app', src : '**', expand: true, cwd: 'src/app/' },
+                    { dest: '<%= distdir %>/js/app', src : ['**', '!**/*Spec.js'], expand: true, cwd: 'src/app/' },
                     { dest: '<%= distdir %>/js/app', src : '**/*.js', expand: true, cwd: '<%= workdir %>' }
                 ]
             },

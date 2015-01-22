@@ -19,6 +19,7 @@ module.exports = function concat(grunt) {
                     '<%= srcdir %>/app/bootstrap.js',
                     '<%= srcdir %>/app/**/index.js',
                     '<%= srcdir %>/app/**/*.js',
+                    '!<%= srcdir %>/app/**/*Spec.js',
                     '<%= workdir %>/templates.js'
                 ],
                 dest: '<%= workdir %>/app.js'
