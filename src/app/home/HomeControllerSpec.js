@@ -9,7 +9,7 @@ describe('HomeController', function() {
         scope = $rootScope.$new();
 
         createController = function(params) {
-            return $controller('app.home.HomeController', _.extend({
+            return $controller('HomeController', _.extend({
                 $scope: scope,
                 $stateParams: { sectionId:'' }
             }, params||{}));
@@ -18,12 +18,12 @@ describe('HomeController', function() {
 
     it('should default to an empty section value if not provided', function() {
         var ctrl = createController();
-        expect(ctrl.section).toBe('');
+        expect(scope.section).toBe('');
     });
 
     it('should store the section value as a scope property', function() {
         var ctrl = createController({$stateParams: { sectionId:'yesnos'}});
-        expect(ctrl.section).toBe('yesnos');
+        expect(scope.section).toBe('yesnos');
     })
 
 });

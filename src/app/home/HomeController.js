@@ -1,5 +1,5 @@
 angular.module('app.home')
-.controller('app.home.HomeController', [
+.controller('HomeController', [
     "$scope",
     "$stateParams",
     function($scope, $stateParams) {

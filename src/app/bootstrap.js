@@ -10,11 +10,11 @@ app.config(function($stateProvider, $urlRouterProvider) {
         .state('home', {
             url: '/',
             templateUrl: 'home/home.html',
-            controller: 'app.home.HomeController'
+            controller: 'HomeController'
         })
         .state('section', {
             url: '/section/:sectionId',
             templateUrl: 'home/home.html',
-            controller: 'app.home.HomeController'
+            controller: 'HomeController'
         });
 });
