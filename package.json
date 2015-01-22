@@ -33,7 +33,8 @@
     "karma": "~0.12.x",
     "grunt-karma": "~0.10.x",
     "karma-jasmine":"~0.3.5",
-    "karma-phantomjs-launcher": "~0.1.4"
+    "karma-phantomjs-launcher": "~0.1.4",
+    "karma-chrome-launcher": "*"
   },
   "engines": {
     "node": ">=0.10.20"
