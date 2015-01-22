@@ -14,6 +14,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-angular-templates');
     grunt.loadNpmTasks('grunt-template');
+    grunt.loadNpmTasks('grunt-karma');
 
     var config = {
         distdir: "dist",
