@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
     return {
         watch: {
-            all: {
+            karma: {
                 files: [
                     "src/**/*.js",
                     "src/**/*.html",
@@ -10,7 +10,7 @@ module.exports = function(grunt) {
                     "src/**/*.jpg",
                     "build/**/*"
                 ],
-                tasks: ["dev"],
+                tasks: ["dev", "karma"],
                 options: { livereload: true }
             }
         }

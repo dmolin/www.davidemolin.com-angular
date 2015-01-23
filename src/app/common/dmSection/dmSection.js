@@ -10,9 +10,9 @@ angular.module('app.common')
             current: '@?'
         },
         controller: function($scope) {
-            $scope.current = $scope.current === 'true';
         },
         link: function(scope, elements, attrs) {
+            scope.current = scope.current === 'true';
             scope.isExpanded = scope.current;
 
             scope.toggle = function toggle() {
