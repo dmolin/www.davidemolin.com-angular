@@ -8,7 +8,8 @@ module.exports = function(grunt) {
                     "src/**/*.css",
                     "src/**/*.png",
                     "src/**/*.jpg",
-                    "build/**/*"
+                    "build/**/*",
+                    "../common/static/stylesheets/**/*"
                 ],
                 tasks: ["dev", "karma"],
                 options: { livereload: true }
