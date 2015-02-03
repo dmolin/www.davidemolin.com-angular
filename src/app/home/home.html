@@ -1,70 +1,71 @@
-<div id='wrapper' class="wrapper">
+<div class="wrapper wrapper--home">
     <header class='intro'>
         <div class="pure-g">
             <!-- logo and other things -->
-            <div id="logo" class="pure-u-1 pure-u-md-1-2">
+            <div class="intro__logo pure-u-1 pure-u-md-1-2">
                 <a href="http://www.davidemolin.com">
-                    <img src="images/Codingshack.png">
-                    <h1>
+                    <img class="intro__logo-img" src="images/Codingshack.png">
+                    <h1 class="structural">
                     <span>CodingShack by Davide Alberto Molin</span>
                     </h1>
                 </a>
             </div><!--END logo-->
 
             <div class="pure-u-1 pure-u-md-1-2">
-                <div class="owner">
-                    <p><em>DAVIDE  ALBERTO  MOLIN</em><br>[ Contract  FRONT  END  WEB  DEVELOPER ]</p>
-                </div>
+                <p class="intro__owner">
+                    <em class="enhanced--heavy">DAVIDE  ALBERTO  MOLIN</em>
+                    <br>[ Contract  FRONT  END  WEB  DEVELOPER ]
+                </p>
             </div>
         </div>
 
     </header>
 
     <!-- slideshow -->
-    <section class="slideshow pure-u-1" data-id="slideshow" dm-carousel>
+    <section class="framed pure-u-1" data-id="slideshow" dm-carousel>
         <!-- later: use ng-repeat -->
-        <div class="slide" data-href="https://www.udemy.com/foundations-of-front-end-development/?couponCode=HVZ6Q8LZEF">
+        <div class="slideshow__slide" data-href="https://www.udemy.com/foundations-of-front-end-development/?couponCode=HVZ6Q8LZEF">
             <img class="pure-img" src="images/carousel_fofed.jpg" >
             <figcaption><p>My new course on Front End Development on Udemy. click for an exclusive discount!</p></figcaption>
         </div>
-        <div class="slide" data-href="http://github.com/dmolin/flightSimPanels">
+        <div class="slideshow__slide" data-href="http://github.com/dmolin/flightSimPanels">
             <img class="pure-img" src="images/carousel_avionics.jpg" >
             <figcaption><p>A personal project I'm working on. Click on the image to visit my Github page</p></figcaption>
         </div>
-        <div class="slide" data-href="http://github.com/dmolin/www.davidemolin.com">
+        <div class="slideshow__slide" data-href="http://github.com/dmolin/www.davidemolin.com">
             <img class="pure-img" src="images/carousel_davidemolin.jpg" >
             <figcaption><p>Personal webpage. Made with Backbone modules. CSS with Pure</p></figure>
         </div>
-        <div class="slide" data-href="http://github.com/dmolin/www.giadacoppi.com">
+        <div class="slideshow__slide" data-href="http://github.com/dmolin/www.giadacoppi.com">
             <img class="pure-img" src="images/carousel_giadacoppi.jpg" >
             <figcaption><p>I turned a static page into a responsive website with dynamic columns</p></figcaption>
         </div>
-        <div class="slide" data-href="http://www.policyexpert.co.uk/car-insurance/">
+        <div class="slideshow__slide" data-href="http://www.policyexpert.co.uk/car-insurance/">
             <img class="pure-img" src="images/carousel_policyexpert.jpg">
             <figcaption><p>with the dream team in QMetric we've been implementing a next generation car insurance platform</p></figcaption>
         </div>
-        <div class="slide">
+        <div class="slideshow__slide">
             <img class="pure-img" src="images/carousel_ea.jpg">
             <figcaption><p>in EA I've been involved in the Origin mobile distribution platform</p></figcaption>
         </div>
-        <div class="slide" data-href="http://www.moshlings.com">
+        <div class="slideshow__slide" data-href="http://www.moshlings.com">
             <img class="pure-img" src="images/carousel_moshlings.jpg" >
             <figcaption><p>I implemented the entire responsive Frontend from design mockups. CSS with Compass/SASS</p>
             </figcaption>
         </div>
-        <div class="slide" data-href="http://www.mindcandy.com">
+        <div class="slideshow__slide" data-href="http://www.mindcandy.com">
             <img class="pure-img" src="images/carousel_mindcandy.jpg" >
             <figcaption><p>I've been extending/maintaining the front end code on the main MindCandy websites.</p></figcaption>
         </div>
-        <div class="slide" data-href="https://sports.bovada.lv/mobile/#home">
+        <div class="slideshow__slide" data-href="https://sports.bovada.lv/mobile/#home">
             <img class="pure-img" src="images/carousel_sportsbook.jpg" >
             <figcaption><p>For Bovada.lv I was involved in multiple projects: the Mobile Application and the games portal logic</p></figcaption>
         </div>
-        <div class="slide">
+        <div class="slideshow__slide">
             <img class="pure-img" src="images/carousel_slotscom.jpg">
             <figcaption><p>On the Drupal Slots.com app. I was in charge for the Front End implementation from original PSD Comps. CSS with SASS</p></figcaption>
         </div>
-        <div class="slide">
+        <div class="slideshow__slide">
             <img class="pure-img" src="images/carousel_riplife.jpg">
             <figcaption><p>I developed a compact MVC framework for use in multiple company-wide projects</p></figure>
         </div>
@@ -73,14 +74,14 @@
     </section>
 
     <!-- content area -->
-    <section class="articles">
+    <section class="sections">
         <!-- About me -->
         <article data-id="about-me" dm-section title="About me" ng-attr-current="{{section === 'about-me'}}">
             <div class="about-me pure-u-1 pure-u-sm-1-3 pure-u-lg-1-6">
                 <a href="//linkedin.com/in/davidemolin" target="_blank"><img class="cameo pure-img" title="dmolin-quarter" src="/images/me.jpg" alt="Picture of myself" /></a>
             </div>
 
-            <div class="about-content pure-u-1 pure-u-sm-2-3 pure-u-lg-5-6">
+            <div class="about-me-bio pure-u-1 pure-u-sm-2-3 pure-u-lg-5-6">
                 <p>
                     I&#8217;m a Front End Developer, with a passion for Web Standards, Javascript programming, Front End Development in general and the World Wide Web.
                 </p>
@@ -95,70 +96,72 @@
                 <hr />
 
                 <p>
-                <strong class="taglist-title">Technologies I'm mostly dealing with at the moment</strong>
+                <strong>Technologies I'm mostly dealing with at the moment</strong>
                 </p>
 
                 <ul class="taglist cf">
-                    <li class="taglist-item">Javascript</li>
-                    <li class="taglist-item">Html and CSS</li>
-                    <li class="taglist-item">CSS Preprocessors (SASS/LESS)</li>
-                    <li class="taglist-item">Node.js (build/automation tool)</li>
-                    <li class="taglist-item">Browserify</li>
-                    <li class="taglist-item">Backbone.js</li>
-                    <li class="taglist-item">Mocha + Chai</li>
-                    <li class="taglist-item">PhantomJs</li>
-                    <li class="taglist-item">Grunt</li>
+                    <li class="taglist__item">Javascript</li>
+                    <li class="taglist__item">Html and CSS</li>
+                    <li class="taglist__item">CSS Preprocessors (SASS/LESS)</li>
+                    <li class="taglist__item">Node.js (build/automation tool)</li>
+                    <li class="taglist__item">Browserify</li>
+                    <li class="taglist__item">Backbone.js</li>
+                    <li class="taglist__item">Mocha + Chai</li>
+                    <li class="taglist__item">PhantomJs</li>
+                    <li class="taglist__item">Grunt</li>
                 </ul>
 
                 <p>
-                    <strong class="taglist-title">Technologies I'm addressing at the moment:</strong>
+                    <strong>Technologies I'm addressing at the moment:</strong>
                 </p>
 
                 <ul class="taglist cf ">
-                    <li class="taglist-item">AngularJS</li>
-                    <li class="taglist-item">Karma</li>
+                    <li class="taglist__item">AngularJS</li>
+                    <li class="taglist__item">Karma</li>
                 </ul>
             </div>
 
-            <ul class="social header">
-                <li><a href="https://github.com/dmolin" target="_blank" class="icon fa fa-github"><span class="label"></span></a></li>
-                <li><a href="https://www.linkedin.com/in/davidemolin" target="_blank" class="icon fa fa-linkedin"><span class="label"></span></a></li>
-                <li><a href="https://twitter.com/davidemolin" target="_blank" class="icon fa fa-twitter"><span class="label"></span></a></li>
-                <li><a href="//www.facebook.com/davide.alberto.molin" target="_blank" class="icon fa fa-facebook"><span class="label"></span></a></li>
-                <li><a href="//google.com/+DavideAlbertoMolin" target="_blank" class="icon fa fa-google-plus"><span class="label"></span></a></li>
+            <ul class="social">
+                <li class="social__item">
+                    <a href="https://github.com/dmolin" target="_blank" class="social__item-link fa fa-github"></a>
+                </li>
+                <li class="social__item"><a href="https://www.linkedin.com/in/davidemolin" target="_blank" class="social__item-link fa fa-linkedin"></a></li>
+                <li class="social__item"><a href="https://twitter.com/davidemolin" target="_blank" class="social__item-link fa fa-twitter"></a></li>
+                <li class="social__item"><a href="//www.facebook.com/davide.alberto.molin" target="_blank" class="social__item-link fa fa-facebook"></a></li>
+                <li class="social__item"><a href="//google.com/+DavideAlbertoMolin" target="_blank" class="social__item-link fa fa-google-plus"></a></li>
             </ul>
 
         </article>
 
         <!-- Yes & No -->
         <article data-id="yesnos" title="My Yes &amp; No" content-class="yesno" dm-section ng-attr-current="{{section === 'yesnos'}}">
-            <div class="pure-u-1 pure-u-sm-1-2 yes">
-                <h3>My YES</h3>
-                <ul class=''>
-                    <li>I Love working <strong>full time</strong> on Javascript/Html/CSS</li>
-                    <li>I live and work in Central London</li>
-                    <li>I like balancing work and private life</li>
-                    <li><strong>Yes</strong> quick stand up</li>
-                    <li><strong>Yes</strong> SCRUM</li>
-                    <li><strong>Yes</strong> let's do-it approach</li>
-                    <li><strong>Yes</strong> problem solving</li>
-                    <li><strong>Yes</strong> flat/horizontal hierarchies</li>
-                    <li><strong>Yes</strong> chats/emails</li>
-                    <li><strong>Yes</strong> Unit Testing</li>
-                    <li><strong>Yes Apple Macs & Linux</strong></li>
-                    <li><strong>Yes</strong> remote working (a <strong>BIG</strong> YES)</li>
+            <div class="pure-u-1 pure-u-sm-1-2 yesno-yes">
+                <h3 class="yesno__title">My YES</h3>
+                <ul class='list'>
+                    <li class="list__item">I Love working <strong>full time</strong> on Javascript/Html/CSS</li>
+                    <li class="list__item">I live and work in Central London</li>
+                    <li class="list__item">I like balancing work and private life</li>
+                    <li class="list__item"><strong>Yes</strong> quick stand up</li>
+                    <li class="list__item"><strong>Yes</strong> SCRUM</li>
+                    <li class="list__item"><strong>Yes</strong> let's do-it approach</li>
+                    <li class="list__item"><strong>Yes</strong> problem solving</li>
+                    <li class="list__item"><strong>Yes</strong> flat/horizontal hierarchies</li>
+                    <li class="list__item"><strong>Yes</strong> chats/emails</li>
+                    <li class="list__item"><strong>Yes</strong> Unit Testing</li>
+                    <li class="list__item"><strong>Yes Apple Macs & Linux</strong></li>
+                    <li class="list__item"><strong>Yes</strong> remote working (a <strong>BIG</strong> YES)</li>
                 </ul>
             </div>
-            <div class="pure-u-1 pure-u-sm-1-2 no">
-                <h3>My No</h3>
-                <ul class=''>
-                    <li>I'm not interested anymore in back-end development (unless it involves NodeJS and a mixture of FrontEnd too)</li>
-                    <li><strong>No</strong> Traveling</li>
-                    <li>I'm not interested in permanent opportunities. </li>
-                    <li>I don't spend more than 8 hours/day at the office (but I can continue working from home). </li>
-                    <li><strong>No</strong> writing code without unit tests</li>
-                    <li><strong>No</strong> Agile Alliance pair-programming (it's not for me)</li>
-                    <li><strong>Preferably No MS Windows</strong></li>
+            <div class="pure-u-1 pure-u-sm-1-2 yesno-no">
+                <h3 class="yesno__title">My No</h3>
+                <ul class='list'>
+                    <li class="list__item">I'm not interested anymore in back-end development (unless it involves NodeJS and a mixture of FrontEnd too)</li>
+                    <li class="list__item"><strong>No</strong> Traveling</li>
+                    <li class="list__item">I'm not interested in permanent opportunities. </li>
+                    <li class="list__item">I don't spend more than 8 hours/day at the office (but I can continue working from home). </li>
+                    <li class="list__item"><strong>No</strong> writing code without unit tests</li>
+                    <li class="list__item"><strong>No</strong> Agile Alliance pair-programming (it's not for me)</li>
+                    <li class="list__item"><strong>Preferably No MS Windows</strong></li>
                 </ul>
             </div>
         </article>
@@ -184,20 +187,22 @@
             </div>
         </article>
 
-        <ul class="social header">
-            <li><a href="https://github.com/dmolin" target="_blank" class="icon fa fa-github"><span class="label"></span></a></li>
-            <li><a href="https://www.linkedin.com/in/davidemolin" target="_blank" class="icon fa fa-linkedin"><span class="label"></span></a></li>
-            <li><a href="https://twitter.com/davidemolin" target="_blank" class="icon fa fa-twitter"><span class="label"></span></a></li>
-            <li><a href="//www.facebook.com/davide.alberto.molin" target="_blank" class="icon fa fa-facebook"><span class="label"></span></a></li>
-            <li><a href="//google.com/+DavideAlbertoMolin" target="_blank" class="icon fa fa-google-plus"><span class="label"></span></a></li>
+        <ul class="social">
+            <li class="social__item">
+                <a href="https://github.com/dmolin" target="_blank" class="social__item-link fa fa-github"></a>
+            </li>
+            <li class="social__item"><a href="https://www.linkedin.com/in/davidemolin" target="_blank" class="social__item-link fa fa-linkedin"></a></li>
+            <li class="social__item"><a href="https://twitter.com/davidemolin" target="_blank" class="social__item-link fa fa-twitter"></a></li>
+            <li class="social__item"><a href="//www.facebook.com/davide.alberto.molin" target="_blank" class="social__item-link fa fa-facebook"></a></li>
+            <li class="social__item"><a href="//google.com/+DavideAlbertoMolin" target="_blank" class="social__item-link fa fa-google-plus"></a></li>
         </ul>
 
     </section>
 
 </div>
 
-<footer id="footer" class="">
-    <section class="wrapper pure-g pad-context">
+<footer id="footer" class="footer">
+    <section class="wrapper pure-g">
         <!-- Tweets -->
         <article class="pad pure-u-1 pure-u-sm-1-2 pure-u-lg-1-3">
             <header>
@@ -230,8 +235,8 @@
     <!-- copyrights -->
 </footer>
 
-<div id="copyright">
-    <p class="">== Powered by AngularJS ==</p>
-    <p class="">© Copyright 2015 www.davidemolin.com. All rights reserved.</p>
+<div class="copyright">
+    <p class="copyright__text">== Powered by AngularJS ==</p>
+    <p class="copyright__text">© Copyright 2015 www.davidemolin.com. All rights reserved.</p>
 
 </div><!--END copyright-->

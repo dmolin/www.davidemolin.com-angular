@@ -1,6 +1,6 @@
-<header class="open-close" ng-class="{'open-close_expanded':isExpanded}">
-    <a href="javascript:void(0)" ng-click="toggle()"><h2>{{title}}</h2></a>
+<header class="section open-close" ng-class="{'open-close--expanded':isExpanded}">
+    <a href="javascript:void(0)" ng-click="toggle()"><h2 class="section__title">{{title}}</h2></a>
 </header>
 
-<div class="pure-g desc expandable {{contentClass}}" ng-show="isExpanded" ng-transclude>
+<div class="pure-g expandable {{contentClass}}" ng-show="isExpanded" ng-transclude>
 </div>
