@@ -8,7 +8,7 @@ angular.module('app.common')
         },
         link: function(scope, elements, attrs) {
             //run the jQuery slideshow plugin...
-            var slider = angular.element('.slides');
+            var slider = angular.element('.slideshow');
             slider.slidesjs({
                     width: 960,
                     //height: 305,

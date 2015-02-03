@@ -8,7 +8,7 @@ module.exports = function concat(grunt) {
                         '<%= assetsdir %>/static/stylesheets/grids-responsive-min.css',
                         '<%= assetsdir %>/static/stylesheets/general_enclosed_foundicons.css',
                         '<%= assetsdir %>/static/stylesheets/font-awesome.min.css',
-                        '<%= assetsdir %>/static/stylesheets/style.css',
+                        '<%= assetsdir %>/static/stylesheets/main.css'
                     ]
                 }
             }
