@@ -12,7 +12,8 @@ angular.module('app.recommendations')
 
             $http.get('data/recommendations/all.json').then(function(response) {
                     $scope.data.recs = response.data;
-                    $timeout(function() { $scope.loaded = true; }, 100);
+                    //timeout executes its handler at the end of the digest cycle
+                    $timeout(function() { $scope.loaded = true; });
                 });
 
         },
