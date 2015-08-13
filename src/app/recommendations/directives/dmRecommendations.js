@@ -6,19 +6,21 @@ angular.module('app.recommendations')
         templateUrl: 'recommendations/directives/dm-recommendations.html',
 
         controller: function($scope) {
-            $scope.recs = [];
+            $scope.data = { recs: [] };
             $scope.loaded = false;
             $scope.rendered = false;
 
             $http.get('data/recommendations/all.json').then(function(response) {
-                    $scope.recs = response.data;
-                    $scope.loaded = true;
+                    $scope.data.recs = response.data;
+                    $timeout(function() { $scope.loaded = true; }, 100);
                 });
 
         },
         link: function(scope, elements, attrs) {
             //run the jQuery slideshow plugin...
-            scope.$watch('loaded', function() {
+            scope.$watch('loaded', function(nval,oval) {
+                if(!nval) return;
+
                 var slider = angular.element('.slides-container');
                 $timeout(function(){
                     slider.slidesjs({
